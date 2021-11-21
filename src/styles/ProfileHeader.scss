@@ -1,0 +1,85 @@
+.profileHeader {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	position: relative;
+	top: 50px;
+	
+}
+
+.profileImage{
+	height:7rem;
+  width:7rem;
+  border:1px solid #fff;
+  border-radius:50%;
+  background:linear-gradient(135deg, rgb(225, 103, 69) 25%, rgb(252, 226, 186) 75%);
+  & > img { 
+	height: 6.5rem;
+	width: 6.5rem;
+	margin-bottom: 10px;
+	position: relative;
+	left:3px;
+	top:3px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+  }
+}
+
+.introTitle{
+	font-weight: 400;
+	font-size: 1.7rem;
+	& > span {
+		font-weight: 700 !important ;
+	}
+}
+
+.introDesc{
+	font-size: 0.8rem;
+	color: #636262;
+}
+
+.menuOptions{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	font-size: 16px !important;
+}
+
+.aboutContent {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	font-size: 1.1rem !important;
+	margin: 15px 0px;
+	text-align: center;
+	
+}
+
+.iconContainer{
+	display: flex;
+	padding: 20px 180px;
+    justify-content: space-evenly;
+}
+
+
+@media only screen and (max-width: 568px) {
+  .writesContainer{
+	  width: 340px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+	.writeNameContainer{
+			 width: 70% !important;
+			 flex-wrap: wrap;
+
+			 & > .writeNameContainerDesc {
+				width: 200px !important;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			 }
+	 }	
+}
